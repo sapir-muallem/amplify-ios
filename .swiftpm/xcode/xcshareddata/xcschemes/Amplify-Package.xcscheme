@@ -362,7 +362,8 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      enableThreadSanitizer = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -383,16 +384,11 @@
                BlueprintName = "AWSCognitoAuthPluginUnitTests"
                ReferencedContainer = "container:">
             </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AWSDataStoreCategoryPluginTests"
-               BuildableName = "AWSDataStoreCategoryPluginTests"
-               BlueprintName = "AWSDataStoreCategoryPluginTests"
-               ReferencedContainer = "container:">
-            </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "EscapeHatchTests">
+               </Test>
+            </SkippedTests>
          </TestableReference>
          <TestableReference
             skipped = "NO">
@@ -413,6 +409,11 @@
                BlueprintName = "AWSS3StoragePluginTests"
                ReferencedContainer = "container:">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "AWSS3StoragePluginConfigureTests">
+               </Test>
+            </SkippedTests>
          </TestableReference>
          <TestableReference
             skipped = "NO">
